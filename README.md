@@ -11,5 +11,16 @@ A code repository for the things I am trying out on the NLP front.
   - How can this Word2Vec (which is actually a pretty good way to represent words) be used effeciently?
     - RNNs
     - LSTMs
-    - GRUs
+    - GRUs <br><br>
+- Notebook 2: Sentiment Analysis of the same dataset above and comparison of different models:
+  - In this notebook, I tried out different models for the text classification use case above. The performance of the 4 models in comparison were:
+    - Simple RNN: `77.5%`
+    - LSTM: `88.6%`
+    - GRU: `88.8%`
+    - Bi-directional LSTM: `87.9%`
+  - Each model has its strengths, but they also come with limitations:
+    - Simple RNNs struggle with long-term dependencies, leading to lower accuracy.
+    - LSTMs and GRUs improve performance by mitigating the vanishing gradient problem, but they can still be computationally expensive.
+    - Bi-directional LSTMs offer better context understanding by processing input in both directions but may still lag behind newer approaches.<br><br>
+  - While these models have been invaluable in NLP tasks, it's fascinating to see how transformers and newer architectures like BERT and GPT have revolutionized the field. These models often outperform traditional RNN-based models by better capturing context and handling long-range dependencies, making them more effective for text classification tasks.
 
